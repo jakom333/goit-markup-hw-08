@@ -83,7 +83,6 @@ img {
 
 .modal {
   position: relative;
-  z-index: 3;
   padding: 40px;
   margin: 0 auto;
   width: 450px;
