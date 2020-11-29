@@ -1,0 +1,282 @@
+.header {
+  position: relative;
+  padding: 16px 0;
+  min-width: 480px;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-header {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: $primary-text-color;
+}
+
+.logo-color {
+  color: $accent-color;
+}
+
+.navigation-btn {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  .icon-navigation-close {
+    display: none;
+  }
+}
+
+.navigation-btn.is-open {
+  .icon-navigation-close {
+    display: block;
+  }
+
+  .icon-navigation-menu {
+    display: none;
+  }
+}
+
+.icon-navigation-menu,
+.icon-navigation-close {
+  fill: $primary-text-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .navigation-btn:hover &,
+  .navigation-btn:focus & {
+    fill: $accent-color;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  padding: 60px 0;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 393px;
+  text-align: center;
+
+  background: $white-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.site-nav-list {
+  margin-bottom: 60px;
+
+  .current {
+    position: relative;
+    color: $accent-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      width: 100%;
+      height: 4px;
+
+      background: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}
+
+.site-nav-item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.site-nav-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $primary-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-contacts-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.site-contacts-link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  fill: $secondary-text-color;
+  color: $secondary-text-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.icon-contacts {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+    padding: 21px 0;
+  }
+
+  .navigation-btn {
+    display: none;
+  }
+
+  .align-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-header {
+    margin-right: 88px;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    padding: 0;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .site-nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 294px;
+    margin-bottom: 0;
+
+    .current {
+      &::after {
+        left: 0;
+        bottom: -34px;
+      }
+    }
+  }
+
+  .site-nav-item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .site-nav-link {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+
+  .site-contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+  }
+
+  .site-contacts-item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .site-contacts-link {
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0 25px 0;
+  }
+
+  .logo-header {
+    margin-right: 93px;
+
+    font-size: 26px;
+    line-height: 1.192;
+  }
+
+  .site-nav-list {
+    .current {
+      &::after {
+        bottom: -33px;
+      }
+    }
+  }
+
+  .site-contacts-list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 340px;
+  }
+
+  .site-contacts-item {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  .site-contacts-link {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+}

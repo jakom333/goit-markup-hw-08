@@ -1,0 +1,28 @@
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-bottom: 40px;
+
+  .filters-btn {
+    margin-bottom: 15px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    padding-bottom: 34px;
+  }
+}
