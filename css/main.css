@@ -65,6 +65,7 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
   left: 0px;
   top: 0px;
   padding: 93px 15px;
@@ -82,6 +83,7 @@ img {
 
 .modal {
   position: relative;
+  z-index: 3;
   padding: 40px;
   margin: 0 auto;
   width: 450px;
@@ -412,6 +414,7 @@ img {
 
 .mobile-nav {
   display: none;
+  z-index: 1;
   position: absolute;
   padding: 60px 0;
   top: 100%;
@@ -765,6 +768,7 @@ img {
   }
   .social-footer {
     margin-bottom: 0;
+    text-align: start;
   }
   .address {
     margin-bottom: 0;
@@ -939,6 +943,9 @@ img {
   }
   .features .features-item:not(:last-child) {
     margin-right: 30px;
+  }
+  .features .features-title {
+    text-align: start;
   }
 }
 
