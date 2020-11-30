@@ -1,12 +1,11 @@
 .portfolio {
   padding: 60px 0;
-  min-width: 480px;
 }
 
 .projects-list-item {
   position: relative;
 
-  width: 450px;
+  max-width: 450px;
   overflow: hidden;
 
   border: 1px solid #eeeeee;

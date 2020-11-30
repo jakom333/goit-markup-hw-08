@@ -1,5 +1,4 @@
 .footer {
-  min-width: 480px;
   padding: 60px 0;
 
   background-color: #2f303a;
@@ -101,8 +100,7 @@
 
 .inside-text {
   display: block;
-  width: 450px;
-  height: 50px;
+  width: 100%;
   padding: 15px 16px;
   margin: 0 auto 20px auto;
 
@@ -158,6 +156,10 @@
 
   .footer-block {
     margin: 0;
+  }
+
+  .inside-text {
+    width: 450px;
   }
 }
 

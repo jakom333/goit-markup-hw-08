@@ -1,6 +1,5 @@
 .clients {
   padding: 60px 0;
-  min-width: 480px;
 
   &-title {
     margin-bottom: 30px;
@@ -18,20 +17,17 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    justify-content: center;
   }
 
   &-item {
-    display: flex;
-    align-items: center;
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 
   &-link {
     display: flex;
-    width: 210px;
-    height: 90px;
-    text-decoration: none;
+    min-height: 90px;
     justify-content: center;
     align-items: center;
     border: 1px solid #afb1b8;
@@ -55,9 +51,9 @@
       width: calc((100% - 6 * 15px) / 3);
     }
 
-    &-link {
-      width: 226px;
-    }
+    // &-link {
+    //   width: 226px;
+    // }
   }
 }
 
@@ -71,16 +67,13 @@
       line-height: 1.167;
     }
 
+    &-item {
+      width: calc((100% - 6 * 15px) / 6);
+    }
+
     &-list {
       flex-wrap: nowrap;
       justify-content: space-between;
-    }
-
-    &-item {
-      display: flex;
-      align-items: center;
-      width: 170px;
-      margin: 0;
     }
   }
 }

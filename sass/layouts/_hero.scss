@@ -1,6 +1,8 @@
 .hero {
-  min-width: 480px;
+  max-width: 767px;
   margin: 0 auto;
+  padding: 118px 60px;
+  text-align: center;
 
   background-color: #2f303a;
   background-image: linear-gradient(
@@ -12,13 +14,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  &-content {
-    min-width: 480px;
-    padding: 118px 60px;
-
-    text-align: center;
-  }
 
   &-title {
     max-width: 360px;
@@ -86,6 +81,7 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    padding: 200px 260px;
 
     background-image: linear-gradient(
         to right,
@@ -105,10 +101,6 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/hero/hero-desktop@2x.jpg);
-    }
-
-    &-content {
-      padding: 200px 260px;
     }
 
     &-title {
