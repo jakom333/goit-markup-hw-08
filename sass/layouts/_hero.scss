@@ -1,7 +1,7 @@
 .hero {
   max-width: 767px;
   margin: 0 auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   text-align: center;
 
   background-color: #2f303a;
@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1200px;
 
     background-image: linear-gradient(
         to right,
@@ -81,7 +81,7 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    padding: 200px 260px;
+    padding: 200px 0;
 
     background-image: linear-gradient(
         to right,

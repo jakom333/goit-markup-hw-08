@@ -783,7 +783,7 @@ img {
 .hero {
   max-width: 767px;
   margin: 0 auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/herobg.jpg);
@@ -820,7 +820,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -837,7 +837,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    padding: 200px 260px;
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -996,6 +996,7 @@ img {
 
 .team {
   padding: 60px 0;
+  margin: 0 auto;
   background-color: #f5f4fa;
 }
 
@@ -1056,8 +1057,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1600px;
-    margin: 0 auto;
     padding: 94px 0;
   }
   .team .title {
