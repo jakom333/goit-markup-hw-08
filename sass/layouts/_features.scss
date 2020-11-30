@@ -19,17 +19,6 @@
       margin-bottom: 30px;
     }
 
-    .features-title {
-      margin-bottom: 10px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 1.143;
-      text-align: center;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $primary-text-color;
-    }
-
     .text {
       font-weight: normal;
       font-size: 14px;
@@ -38,6 +27,17 @@
 
       color: $secondary-text-color;
     }
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-text-color;
   }
 
   .icon-antenna {
@@ -76,6 +76,10 @@
       margin: 15px;
     }
   }
+
+  .features-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -91,10 +95,6 @@
       &:not(:last-child) {
         margin-right: 30px;
       }
-    }
-
-    .features-title {
-      text-align: start;
     }
   }
 }

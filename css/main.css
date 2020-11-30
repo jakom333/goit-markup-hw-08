@@ -883,7 +883,15 @@ img {
   margin-bottom: 30px;
 }
 
-.features-item .features-title {
+.features-item .text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.features-title {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -892,14 +900,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-}
-
-.features-item .text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .features .icon-antenna::before {
@@ -928,6 +928,9 @@ img {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
+  .features-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -942,9 +945,6 @@ img {
   }
   .features .features-item:not(:last-child) {
     margin-right: 30px;
-  }
-  .features .features-title {
-    text-align: start;
   }
 }
 

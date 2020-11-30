@@ -3,11 +3,12 @@
   padding: 60px 0;
 
   background-color: #2f303a;
-}
-.footer-block {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+
+  &-block {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .logo-footer {
